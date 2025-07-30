@@ -1,0 +1,144 @@
+.quiz{
+    height: 100vh;
+}
+.quiz-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background: #c8abff;
+}
+.quiz-top button{
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.quiz-top button:hover{
+    background-color: #0056b3;
+}
+.quiz-box{
+    height: calc(100% - 52px);
+    display: flex;
+}
+.quiz-left{
+    width: 40%;
+    background: #ddf8ff;
+    padding: 15px 30px;
+}
+.warning ol{
+    padding-left: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.legend{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.legend span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 6px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.legend .mark{
+    display: flex;
+    align-items: center;
+}
+.visited.mark span{
+    background: rgb(255, 255, 65);
+}
+.attempted.mark span{
+    background: rgb(25, 255, 25);
+}
+.question-numbers{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+  margin: 20px auto;
+  width: 80%;
+}
+.number{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    padding: 4px;
+    width: 36px;
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 0.2 ease;
+}
+.number:hover, .number.active{
+    background-color: #00abff;
+}
+
+.number.visited {
+  background-color: rgb(255, 255, 65);
+}
+
+.number.attempted {
+  background-color: rgb(103, 242, 103);
+}
+
+.quiz-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 30px;
+    width: 60%;
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    gap: 10px;
+}
+.option{
+    padding: 10px 15px;
+    text-align: left;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 4px;
+    background: #e6e1ff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.option:hover{
+    background: rgb(0, 145, 255);
+}
+.option.attempted{
+    background-color: rgb(0, 255, 0);
+}
+.option.selected{
+    background: rgb(0, 145, 255);
+}
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+}
+.buttons button{
+background-color: #ff2d70;
+    color: white;
+    padding: 10px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.buttons button:hover{
+    background-color: #0056b3;
+}

@@ -1,0 +1,178 @@
+ [
+    {
+      "type": "boolean",
+      "difficulty": "hard",
+      "category": "Entertainment: Video Games",
+      "question": "In &quot;Call Of Duty: World At War&quot;, the first appearance of the &quot;PPSH-41&quot; in &quot;Zombies&quot; was in the map &quot;Der Riese&quot;.",
+      "correct_answer": "False",
+      "incorrect_answers": [
+        "True"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Music",
+      "question": "Who is the lead singer of Foo Fighters?",
+      "correct_answer": "Dave Grohl",
+      "incorrect_answers": [
+        "Dave Mustaine",
+        "James Hetfield",
+        "Little Red Riding Hood"
+      ]
+    },
+    {
+      "type": "boolean",
+      "difficulty": "medium",
+      "category": "History",
+      "question": "The two atomic bombs dropped on Japan by the United States in August 1945 were named &#039;Little Man&#039; and &#039;Fat Boy&#039;.",
+      "correct_answer": "False",
+      "incorrect_answers": [
+        "True"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Film",
+      "question": "What character in the Winnie the Pooh films was added by Disney and does not appear in the original books?",
+      "correct_answer": "Gopher",
+      "incorrect_answers": [
+        "Tigger",
+        "Heffalumps",
+        "Rabbit"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "When was the Sega Genesis released in Japan?",
+      "correct_answer": "October 29, 1988",
+      "incorrect_answers": [
+        "August 14, 1989",
+        "November 30, 1990",
+        "September 1, 1986"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "In &quot;Jewelpet Sunshine&quot;, what is the song that plays when Kanon and her friends bust out of prison?",
+      "correct_answer": "I Don&#039;t Want to Miss a Thing",
+      "incorrect_answers": [
+        "Eye Of The Tiger",
+        "Born to be Wild",
+        "Ruby Ring"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Film",
+      "question": "What is the birth name of Michael Caine?",
+      "correct_answer": "Maurice Micklewhite",
+      "incorrect_answers": [
+        "Morris Coleman",
+        "Carl Myers",
+        "Martin Michaels"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "History",
+      "question": "How long did World War II last?",
+      "correct_answer": "6 years",
+      "incorrect_answers": [
+        "4 years",
+        "5 years",
+        "7 years"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "What colour hair does the main character of the Yu-Gi-Oh! original anime series have?",
+      "correct_answer": "Red, black and yellow",
+      "incorrect_answers": [
+        "Red, yellow and green",
+        "Red, black and green",
+        "Red, purple and blue"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Vehicles",
+      "question": "When was Tesla founded?",
+      "correct_answer": "2003",
+      "incorrect_answers": [
+        "2008",
+        "2005",
+        "2007"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Board Games",
+      "question": "On a standard Monopoly board, how much do you have to pay for Tennessee Ave?",
+      "correct_answer": "$180",
+      "incorrect_answers": [
+        "$200",
+        "$160",
+        "$220"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "What is Gatomon&#039;s name in the original Japanese version of Digimon Adventure?",
+      "correct_answer": "Tailmon",
+      "incorrect_answers": [
+        "Pawmon",
+        "Catmon",
+        "Nekomon"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Video Games",
+      "question": "In Need for Speed: Most Wanted (2005), what was the name of the main antagonist?",
+      "correct_answer": "Clarence &quot;Razor&quot; Callahan",
+      "incorrect_answers": [
+        "Hector &quot;Ming&quot; Domingo",
+        "Toru &quot;Bull&quot; Sato",
+        "Karl &quot;Baron&quot; Smit"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Music",
+      "question": "Which singer was featured in Swedish producer Avicii&#039;s song &quot;Wake Me Up&quot;?",
+      "correct_answer": "Aloe Blacc",
+      "incorrect_answers": [
+        "John Legend",
+        "CeeLo Green",
+        "Pharrell Williams"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Television",
+      "question": "Which show is known for the songs &quot;You are a Pirate&quot;, &quot;Cooking by the Book&quot; and &quot;We Are Number One&quot;?",
+      "correct_answer": "LazyTown",
+      "incorrect_answers": [
+        "Sofia the First",
+        "DuckTales",
+        "Tom and Jerry"
+      ]
+    }
+  ]
