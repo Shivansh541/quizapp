@@ -7,7 +7,7 @@ const Home = () => {
   const handleStartQuiz = (e)=>{
     e.preventDefault()
     localStorage.setItem('quizEmail', email)
-    navigate('/quiz')
+    navigate('/quizapp/quiz')
   }
   return (
     <section className='home'>

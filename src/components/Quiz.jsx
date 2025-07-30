@@ -14,79 +14,66 @@ const Quiz = () => {
   const [selected, setSelected] = useState({})
   const [email, setEmail] = useState('')
   const attemptedRef = useRef(attempted);
-const questionsRef = useRef(questions);
-useEffect(() => {
-  attemptedRef.current = attempted;
-}, [attempted]);
+  const questionsRef = useRef(questions);
+  useEffect(() => {
+    attemptedRef.current = attempted;
+  }, [attempted]);
 
-useEffect(() => {
-  questionsRef.current = questions;
-}, [questions]);
+  useEffect(() => {
+    questionsRef.current = questions;
+  }, [questions]);
 
-useEffect(() => {
-  if (!loading) {
-    const timer = setInterval(() => {
-      setTimeLeft((prev) => {
-        if (prev <= 1) {
-          clearInterval(timer);
-          setTimeout(() => {
-            navigate('/report', {
-              state: {
-                attempted: attemptedRef.current,
-                questions: questionsRef.current
-              }
-            });
-          }, 0);
-          localStorage.removeItem('quizEmail')
-          return 0;
-        }
-        return prev - 1;
-      });
-    }, 1000);
+  useEffect(() => {
+    if (!loading) {
+      const timer = setInterval(() => {
+        setTimeLeft((prev) => {
+          if (prev <= 1) {
+            clearInterval(timer);
+            setTimeout(() => {
+              navigate('/quizapp/report', {
+                state: {
+                  attempted: attemptedRef.current,
+                  questions: questionsRef.current
+                }
+              });
+            }, 0);
+            localStorage.removeItem('quizEmail')
+            return 0;
+          }
+          return prev - 1;
+        });
+      }, 1000);
 
-    return () => clearInterval(timer); // cleanup
-  }
-}, [loading, navigate]);
+      return () => clearInterval(timer);
+    }
+  }, [loading, navigate]);
 
-  // useEffect(() => {
-  //   const formatted = data.map((q) => {
-  //     const options = shuffle([...q.incorrect_answers, q.correct_answer])
-  //     return {
-  //       ...q,
-  //       options,
-  //     }
-  //   })
-  //   setQuestions(formatted)
-  //   setLoading(false)
-  // }, [])
 
   const formatTime = (seconds) => {
     const mins = Math.floor(seconds / 60);
     const secs = seconds % 60;
     return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
   };
-  // Shuffle options
   const shuffle = (array) => {
     return [...array].sort(() => Math.random() - 0.5);
   };
-useEffect(() => {
-  const savedEmail = localStorage.getItem('quizEmail');
+  useEffect(() => {
+    const savedEmail = localStorage.getItem('quizEmail');
 
-  if (!savedEmail) {
-    navigate('/');
-  } else {
-    setEmail(savedEmail);
-  }
-}, [navigate]);
+    if (!savedEmail) {
+      navigate('/quizapp/');
+    } else {
+      setEmail(savedEmail);
+    }
+  }, [navigate]);
   useEffect(() => {
     const navigationFlag = sessionStorage.getItem('quiz_started');
 
     if (!navigationFlag) {
       sessionStorage.setItem('quiz_started', 'true');
     } else {
-      // delay navigation until after render
       setTimeout(() => {
-        navigate('/');
+        navigate('/quizapp/');
         localStorage.removeItem('quizEmail')
       }, 0);
     }
@@ -97,7 +84,6 @@ useEffect(() => {
   }, [navigate]);
 
 
-  // Fetch questions
   useEffect(() => {
     fetch('https://opentdb.com/api.php?amount=15')
       .then(res => res.json())
@@ -132,11 +118,10 @@ useEffect(() => {
     if (selected[currentQ]) {
       setAttempted(prev => ({ ...prev, [currentQ]: selected[currentQ] }));
       setSelected({});
-      console.log(attempted)
     }
   };
   const handleFinish = () => {
-    navigate('/report', {
+    navigate('/quizapp/report', {
       state: {
         attempted,
         questions
@@ -213,7 +198,7 @@ useEffect(() => {
           <div>
             <p className='question'><strong>Q{currentQ + 1}</strong>: {decode(questions[currentQ].question)}</p>
             <div className="options">
-              {questions[currentQ].options.map((option, index) => (
+              {questions[currentQ]?.options?.map((option, index) => (
                 <button
                   onClick={() => { setSelected({ [currentQ]: option }) }}
                   key={index}

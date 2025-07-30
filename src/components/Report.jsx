@@ -15,7 +15,7 @@ if (!attempted || Object.keys(attempted).length === 0 || !questions || questions
       <p>Please start the quiz and attempt at least one question to see the report.</p>
       <button 
         className='home-btn'
-        onClick={() => {navigate('/');localStorage.removeItem('quizEmail')}} 
+        onClick={() => {navigate('/quizapp/');localStorage.removeItem('quizEmail')}} 
       >
         Go to Home Page
       </button>
@@ -41,7 +41,7 @@ if (!attempted || Object.keys(attempted).length === 0 || !questions || questions
                 </div>
                       <button 
         className='home-btn'
-        onClick={() => {navigate('/');localStorage.removeItem('quizEmail')}} 
+        onClick={() => {navigate('/quizapp/');localStorage.removeItem('quizEmail')}} 
       >
         Go to Home Page
       </button>
