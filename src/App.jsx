@@ -5,7 +5,7 @@ import Report from './components/Report';
 function App() {
   
   return (
-    <BrowserRouter >
+    <BrowserRouter basename='/'>
     <Routes>
       <Route path = '/' element = {<Home/>}/>
       <Route path = '/quiz' element = {<Quiz/>}/>
