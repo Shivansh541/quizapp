@@ -30,7 +30,7 @@ const Quiz = () => {
           if (prev <= 1) {
             clearInterval(timer);
             setTimeout(() => {
-              navigate('/quizapp/report', {
+              navigate('/report', {
                 state: {
                   attempted: attemptedRef.current,
                   questions: questionsRef.current
@@ -61,7 +61,7 @@ const Quiz = () => {
     const savedEmail = localStorage.getItem('quizEmail');
 
     if (!savedEmail) {
-      navigate('/quizapp/');
+      navigate('/');
     } else {
       setEmail(savedEmail);
     }
@@ -73,7 +73,7 @@ const Quiz = () => {
       sessionStorage.setItem('quiz_started', 'true');
     } else {
       setTimeout(() => {
-        navigate('/quizapp/');
+        navigate('/');
         localStorage.removeItem('quizEmail')
       }, 0);
     }
@@ -121,7 +121,7 @@ const Quiz = () => {
     }
   };
   const handleFinish = () => {
-    navigate('/quizapp/report', {
+    navigate('/report', {
       state: {
         attempted,
         questions
