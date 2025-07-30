@@ -1,17 +1,17 @@
-import { HashRouter, Route, Routes} from 'react-router-dom'
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Home from './components/Home';
 import Quiz from './components/Quiz';
 import Report from './components/Report';
 function App() {
   
   return (
-    <HashRouter>
+    <BrowserRouter >
     <Routes>
-      <Route path = '/' element = {<Home/>}/>
-      <Route path = '/quiz' element = {<Quiz/>}/>
-      <Route path = '/report' element = {<Report/>}/>
+      <Route path = '/quizapp/' element = {<Home/>}/>
+      <Route path = '/quizapp/quiz' element = {<Quiz/>}/>
+      <Route path = '/quizapp/report' element = {<Report/>}/>
     </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
