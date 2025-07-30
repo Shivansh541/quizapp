@@ -2,7 +2,7 @@
 
 A fully functional React-based quiz application with email entry, timer-based auto-submission, and a detailed score report.
 
-🔗 **Live Demo:** [https://testzy.vercel.app](https://testzy.vercel.app)
+**Live Demo:** [https://testzy.vercel.app](https://testzy.vercel.app)
 
 ---
 
@@ -17,7 +17,7 @@ A fully functional React-based quiz application with email entry, timer-based au
 
 ---
 
-## 🛠 Getting Started
+## Getting Started
 
 ### 1. Clone the Repository
 
