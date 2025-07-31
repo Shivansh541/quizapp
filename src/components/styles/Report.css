@@ -100,3 +100,63 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+@media (max-width: 1024px) {
+  .report {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .report-left {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px 30px;
+  }
+
+  .report-right {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px 30px;
+  }
+
+  .report-left .score {
+    width: 100px;
+    height: 100px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .report-left,
+  .report-right {
+    padding: 15px 20px;
+  }
+
+  .report-left p {
+    font-size: 14px;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .report-left .score {
+    width: 90px;
+    height: 90px;
+    font-size: 16px;
+  }
+
+  .report-left .score span {
+    font-size: 12px;
+  }
+
+  .question-box {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .home-btn {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+  }
+}

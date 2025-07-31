@@ -62,3 +62,63 @@
 .right-home button:hover {
   background-color: #0056b3;
 }
+@media (max-width: 1024px) {
+  .home {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-home,
+  .right-home {
+    width: 100%;
+    padding: 20px 30px;
+  }
+
+  .left-home h1 {
+    font-size: 28px;
+  }
+
+  .left-home h3 {
+    font-size: 20px;
+  }
+
+  .left-home ol {
+    font-size: 0.95rem;
+  }
+
+  .right-home {
+    padding: 40px 30px;
+    background-position: center;
+  }
+
+  .right-home form {
+    width: 100%;
+  }
+
+  .right-home input,
+  .right-home button {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .left-home h1 {
+    font-size: 24px;
+  }
+
+  .left-home h3 {
+    font-size: 18px;
+  }
+
+  .right-home h2 {
+    font-size: 20px;
+  }
+  .left-home ol{
+    font-size: 14px;
+  }
+  .right-home input,
+  .right-home button {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+}

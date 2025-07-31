@@ -142,3 +142,56 @@ background-color: #ff2d70;
 .buttons button:hover{
     background-color: #0056b3;
 }
+/* 📱 Responsive Styles */
+@media (max-width: 1024px) {
+    .question-numbers span{
+        margin: auto;
+    }
+  .quiz-box {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .quiz-left,
+  .quiz-right {
+    width: 100%;
+  }
+
+  .question-numbers {
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+  }
+
+  .legend {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 600px) {
+  .quiz-top {
+    padding: 10px 20px;
+    gap: 10px;
+  }
+
+  .quiz-left,
+  .quiz-right {
+    padding: 15px 20px;
+  }
+
+  .number {
+    width: 32px;
+    font-size: 18px;
+  }
+
+  .question-numbers {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .option {
+    font-size: 15px;
+    padding: 8px 12px;
+  }
+  .buttons button{
+    font-size: 0.8rem;
+  }
+}
