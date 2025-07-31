@@ -142,7 +142,6 @@ background-color: #ff2d70;
 .buttons button:hover{
     background-color: #0056b3;
 }
-/* 📱 Responsive Styles */
 @media (max-width: 1024px) {
     .question-numbers span{
         margin: auto;

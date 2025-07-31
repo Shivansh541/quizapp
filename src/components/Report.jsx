@@ -5,7 +5,6 @@ import { decode } from 'he'
 const Report = () => {
     const location = useLocation()
     const { attempted, questions } = location.state || {};
-    // Optional check
 const navigate = useNavigate();
 
 if (!attempted || Object.keys(attempted).length === 0 || !questions || questions.length === 0) {
@@ -58,7 +57,6 @@ if (!attempted || Object.keys(attempted).length === 0 || !questions || questions
                                 const userAnswer = attempted[i];
                                 const correctAnswer = q.correct_answer;
 
-                                // Determine class based on user selection
                                 let className = "option";
                                 if (userAnswer === option && option === correctAnswer) {
                                     className += " correct"; // selected & correct
